@@ -28,14 +28,14 @@
         <Button
 
             android:id="@+id/btChangeImg"
-            android:text="CLICK ME"
+            android:text="@string/btClickMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
 
             android:id="@+id/btCall"
-            android:text="CALL"
+            android:text="@string/btCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -51,7 +51,7 @@
         <EditText
             android:id="@+id/etPassword"
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="@string/btPassword"
             android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -59,7 +59,7 @@
         <Button
 
             android:id="@+id/btPassword"
-            android:text="ENTER"
+            android:text="@string/btEnter"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 

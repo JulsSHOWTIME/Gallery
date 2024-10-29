@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Gallery</string>
+    <string name="app_name" translatable="false">Gallery</string>
+
+    <string name="btClickMe">CLICK ME</string>
+    <string name="btCall">CALL</string>
+    <string name="btPassword">Password</string>
+    <string name="btEnter">ENTER</string>
 </resources>
