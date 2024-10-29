@@ -17,6 +17,8 @@
 
     <LinearLayout
 
+        android:id="@+id/llActions"
+        android:visibility="gone"
         android:orientation="horizontal"
         android:layout_margin="10dp"
         android:gravity="center"
@@ -39,7 +41,29 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+
+            android:id="@+id/btPassword"
+            android:text="ENTER"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 
 

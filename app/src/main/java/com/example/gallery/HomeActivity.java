@@ -5,7 +5,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,6 +37,28 @@ public class HomeActivity extends AppCompatActivity {
         final ImageView ivAndroid = findViewById(R.id.ivAndroid);
         Button btChangeImg = findViewById(R.id.btChangeImg);
         Button btCall = findViewById(R.id.btCall);
+        final LinearLayout llActions = findViewById(R.id.llActions);
+        final LinearLayout llPassword = findViewById(R.id.llPassword);
+        final EditText etPassword = findViewById(R.id.etPassword);
+        Button btPassword = findViewById(R.id.btPassword);
+
+
+        btPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String password = etPassword.getText().toString();
+
+                if(password.equals("pass123")){
+                    llActions.setVisibility(View.VISIBLE);
+                    llPassword.setVisibility(View.GONE);
+
+                } else {
+
+                    Toast.makeText(HomeActivity.this, "Password Incorrecto", Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        });
 
         ivAndroid.setOnClickListener(new View.OnClickListener() {
             @Override
