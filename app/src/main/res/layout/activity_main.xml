@@ -15,12 +15,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <Button
+    <LinearLayout
 
-        android:id="@+id/btChangeImg"
+        android:orientation="horizontal"
         android:layout_margin="10dp"
-        android:text="CLICK ME"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+
+            android:id="@+id/btChangeImg"
+            android:text="CLICK ME"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+
+            android:id="@+id/btCall"
+            android:text="CALL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
 
 </LinearLayout>

@@ -31,7 +31,9 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
-        ImageView ivAndroid = findViewById(R.id.ivAndroid);
+        final ImageView ivAndroid = findViewById(R.id.ivAndroid);
+        Button btChangeImg = findViewById(R.id.btChangeImg);
+        Button btCall = findViewById(R.id.btCall);
 
         ivAndroid.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,7 +50,17 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        Button btChangeImg = findViewById(R.id.btChangeImg);
+
+        btCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String phone = "tel:153879234";
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse(phone));
+                startActivity(intent);
+            }
+        });
 
         btChangeImg.setOnClickListener(new View.OnClickListener() {
             @Override
